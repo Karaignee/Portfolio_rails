@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<nav>
+  <ul id="nav-bar horizontal">
+    <li> <%= link_to 'Home', root_url %> </li> |
+    <li> <a href="#"></a>Blog</li> |
+    <li> <a href="#"></a> Work</li> |
+    <li> <a href="#"></a>Contact</li>
+  </ul>
+</nav>
+
+<header>
+  <h1> Karaign&eacute;e </h1>
+  <h2> araign&eacute;e <strong>f</strong> (plural araign&eacute;es) </h2>
+  <h2>spider </h2>
+
+</header>
+
+<%= yield %>
+
+</body>
+</html>
