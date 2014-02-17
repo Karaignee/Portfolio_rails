@@ -1,8 +1,9 @@
-testing testing
 
 <section class="section_light">
 
-  <div id="simplebox">put something in the box</div>
+  <div id="simplebox">
+    <a href="#" class="lightbox"> lightbox </a>
+  </div>
 
   <div id="simplebox">put something in the box</div>
 
@@ -14,15 +15,12 @@ testing testing
 
   <h3>Karaign&eacute;e photographie</h3>
 
-  <a href="#" class="th"><img class='imagedropshadow' src="images/KBW6.jpg" width="100" height="100" alt="desc">
+  <a href="#" class="th"><img class='imagedropshadow' src="assets/goldengate.jpg" width="100" height="100" alt="desc">
   </a>
-  <a href="#" class="th"><img class='imagedropshadow' src="images/KBW6.jpg" width="100" height="100" alt="desc">
+  <a href="#" class="th"><img class='imagedropshadow' src="assets/warsaw.jpg" width="100" height="100" alt="desc">
   </a>
-  <a href="#" class="th"><img class='imagedropshadow' src="images/KBW6.jpg" width="100" height="100" alt="desc">
+  <a href="#" class="th"><img class='imagedropshadow' src="assets/wewin.jpg" width="100" height="100" alt="desc">
   </a>
-
-
-
 
 </section>
 
@@ -30,3 +28,33 @@ testing testing
 <footer> contact details | social media </footer>
 
 </body>
+
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $('.lightbox').click(function(){
+      $('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
+      $('.box').animate({'opacity':'1.00'}, 300, 'linear');
+      $('.backdrop, .box').css('display', 'block');
+    });
+
+    $('.close').click(function(){
+      close_box();
+    });
+
+    $('.backdrop').click(function(){
+      close_box();
+    });
+
+  });
+
+  function close_box()
+  {
+    $('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
+      $('.backdrop, .box').css('display', 'none');
+    });
+  }
+
+</script>
