@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "main": "lib/portfolio.js",
+  "description": "The best module ever.",
+  "homepage": "https://github.com//portfolio",
+  "bugs": "https://github.com//portfolio/issues",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//portfolio"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "files": [
+    ""
+  ],
+  "keywords":[
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.0",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.0",
+    "jshint-stylish": "~0.1.3"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
