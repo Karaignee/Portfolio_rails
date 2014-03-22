@@ -11,29 +11,29 @@
 <body>
 
 
+<div class="container">
+<div id=header class="row">
+      <div class="4u">
+        <h1> Karaign&eacute;e </h1>
+        <h3> Pronunciation: /aʀeɲe/ = spider</h3>
+        <h3>Compounds: toile d'araign&eacute;e   = spider's web </h3>
+      </div>
+</div>
 
-  <script src="js/main.js"></script>
-  <script src="js/skel.min.js"></script>
-</head>
 
 
-<nav>
-  <ul id="nav-bar horizontal">
-    <li> <%= link_to 'Home', root_url %> </li> |
-    <li> <a href="#"></a>Blog</li> |
-    <li> <a href="#"></a> Work</li> |
-    <li> <a href="#"></a>Contact</li>
-  </ul>
+<nav id="nav" class="8u">
+    <%= link_to 'Home', root_url %>
+     <a href="#"></a>Blog |
+     <a href="#"></a> Work |
+     <a href="#"></a>Contact
 </nav>
-
-<header>
-  <h1> Karaign&eacute;e </h1>
-  <h2> araign&eacute;e <strong>f</strong> (plural araign&eacute;es) </h2>
-  <h2>spider </h2>
-
-</header>
+</div>
 
 <%= yield %>
 
 </body>
+
+<script src="js/main.js"></script>
+<script src="js/skel.min.js"></script>
 </html>

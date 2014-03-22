@@ -14,7 +14,7 @@
  *= require_tree .
  */
 
-body {background: #fafafa}
+/*body {background: #fafafa}
 
 header {background: #dddddd; clear:both; padding: 20px 0 40px}
 
@@ -38,6 +38,7 @@ header {background: #dddddd; clear:both; padding: 20px 0 40px}
 .nav-bar > li > a { color: #4d4d4d}
 .nav-bar > li > a:hover { color: #000;}
 
+*/
 
 .section_dark {background: #262626; border-top: 0; border-bottom: 1px dotted #999; padding: 20px 0 40px;}
 .section_dark h2 {color: #999999; margin: 0 0 20px 0; font-size: 22px; text-align: center}
@@ -45,6 +46,7 @@ header {background: #dddddd; clear:both; padding: 20px 0 40px}
 .section_light {background: #99CCCC; border-top: 0; border-bottom: 1px dotted #999; padding: 20px 0 40px}
 .section_light h2 {color: #999999; margin: 0 0 20px 0; font-size: 22px; text-align: center}
 
+/*  I don't think I like this after all, looks messy
 #simplebox {
     display: inline;
     width: 20%;
@@ -54,10 +56,86 @@ header {background: #dddddd; clear:both; padding: 20px 0 40px}
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+*/
 
 .imagedropshadow { padding: 5px; border: solid 1px #EFEFEF; } a:hover img.imagedropshadow { border: solid 1px #CCC; -moz-box-shadow: 1px 1px 5px #999; -webkit-box-shadow: 1px 1px 5px #999; box-shadow: 1px 1px 5px #999; }
 
 a .lightbox  {padding: 30px;}
-/*#th  {padding: 10px;}*/
+
+
+/* lightbox from fran*/
+
+
+#lightbox{
+    background-color:#eee;
+    padding: 10px;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+}
+#lightboxDetails{
+    font-size: 0.8em;
+    padding-top: 0.4em;
+}
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;}
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+    background-color: #333;
+    back\ground-color: transparent;
+    background-image: url(blank.gif);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+}
+
+/* more of the lightbox css from fran */
+
+#lightbox
+{
+    background-color:#eee;
+    padding: 10px;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+}
+
+#lightboxDetails
+{
+    font-size: 0.8em;
+    padding-top: 0.4em;
+}
+
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+
+#lightbox img{ border: none; }
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(../images/overlay.png); }
+
+* html #overlay
+{
+    background-color: #000;
+    back\ground-color: transparent;
+    background-image: url(../images/blank.gif);
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/overlay.png", sizingMethod="scale");
+}
+
+
+/*
+   Added after for thumbnails.
+   I just had to change the image location above to read ../images
+   just to reflect the folder structure
+
+ */
+.thumb
+{
+    height: 100px;
+    width: 100px;
+}
+
 
 

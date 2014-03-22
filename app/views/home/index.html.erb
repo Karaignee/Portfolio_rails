@@ -1,83 +1,92 @@
 
-<a href="#" class="lightbox">Open Lightbox</a>
-
-<div class="backdrop"></div>
-<div class="box"><div class="close">x</div>This is the lightbox!!!</div>
-
-<div class="row">
-  <section class="4u">
+<div id="banner">
+  <div class="container">
+  <div class="row">
+    <div class="6u">
 
 
+  <div class="button"> hello world, I'm Karen</div>
 
-  <div id="simplebox">put something in the box</div>
+     </div>
 
-  <div id="simplebox">put something in the box</div>
-
-</section>
-
+  <div class="6u">
+      <a href="#"><img class='imagedropshadow' src="assets/banner.jpg" alt="">
+      </a>
   </div>
+  </div>
+  </div>
+</div>
+
+
+<div id="content">
+  <div class="container">
+    <div class="row">
+      <div class="4u">
+        <!-- box 1 -->
+        <h3>Hello world</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+      </div>
+      <div class="4u">
+        <!-- box 2 -->
+        <h3>about</h3>
+        <p>link to projects </p>
+      </div>
+      <div class="4u">
+        <!-- box 3 -->
+        <h2>Visit Dev:Grads</h2>
+        <p>
+          This is <strong>Dev:Grads</strong>, a site for developers to network, ask and answer code and technical questions and share ideas:
+          by <a href="#">AJ</a>. It's responsive, has loads of cool features built from scratch in Rails and uses Twitter Bootstrap.
+        </p>
+      </div>
+
+    </div>
+  </div>
+ </div>
+
+
 
 <section class="section_dark">
-
   <h3>Karaign&eacute;e photographie</h3>
 
+  <div id="features">
+    <div class="container">
+      <div class="row">
+          <div class="3u">
+								<!-- Feature #1 -->
+									<section>
+                    <a href="assets/warsaw.jpg" rel="lightbox" class="bordered-feature-image">
+                      <img src="assets/warsaw.jpg" alt="Warsaw" class="thumb">
+                    </a>
+									</section>
+							</div>
+        <div class="3u">
+          <!-- Feature #2 -->
+          <section>
+            <a href="assets/goldengate.jpg" rel="lightbox"  class="bordered-feature-image">
+              <img src="assets/goldengate.jpg" alt="Golden Gate 2011" class="thumb">
+            </a>
+          </section>
+        </div>
 
-  <a href="#" id="th" class="lightbox th">
-    <img class='imagedropshadow' src="assets/goldengate.jpg" width="100" height="100" alt="desc">
-  </a>
-  <div class="backdrop"></div>
-  <div class="box" id="box1">
-    <div class="close">x</div>
-    <img src="assets/goldengate.jpg" width="400" height="300" >
+        <div class="3u">
+          <!-- Feature #3 -->
+          <section>
+            <a href="assets/wewin.jpg" rel="lightbox"  class="bordered-feature-image">
+              <img src="assets/wewin.jpg" alt="Cats 3" class="thumb">
+            </a>
+          </section>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <a href="#" id="th" class="lightbox th"><img class='imagedropshadow' src="assets/warsaw.jpg" width="100" height="100" alt="desc">
-  </a>
-  <div class="backdrop"></div>
-  <div class="box" id=box2><div class="close">x</div><img src="assets/warsaw.jpg" width="400" height="300" ></div>
-
-  <a href="#" id="th" class="lightbox th"><img class='imagedropshadow' src="assets/wewin.jpg" width="100" height="100" alt="desc">
-  </a>
-  <div class="backdrop"></div>
-  <div class="box" id="box3"><div class="close">x</div><img src="assets/wewin.jpg" width="400" height="300" ></div>
-
 </section>
-
 
 <footer> contact details | social media </footer>
 
+
 </body>
 
- <!--todo: click handler needs to identify id, animate doesn't take a function) hash map/object in javascript -->
 
 
-<script type="text/javascript">
-
-  $('.lightbox').click(function(event){
-    console.log(this)
-    var id = 'box' + this.id.substring(this.id.length -1, this.id.length); /* finding the correct id for the box div, substring is for javascript string manipulation */
-    console.log(id)
-   $(this).animate({'opacity':'.50'}, 300, 'linear');
-
-    $(id).animate({'opacity':'1.00', 'display': 'block'}, 300, 'linear');
-    $('.backdrop').css('display', 'block');
-  });
-
-  $('.close').click(function(){
-    close_box();
-  });
-
-  $('.backdrop').click(function(){
-    close_box();
-  });
-
-  function close_box()
-  {
-    $('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
-      $('.backdrop, .box').css('display', 'none');
-    });
-  }
-
-
-</script>
 
